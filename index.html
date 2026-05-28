@@ -1,13 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>我的个人网站</title>
+    <title>我的电视剧小站</title>
+    <style>
+        /* 简单的样式，让页面更好看 */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .drama-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .drama-card {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .drama-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .drama-poster {
+            width: 100%;
+            height: 200px;
+            background-color: #ddd;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+        }
+        .drama-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .drama-desc {
+            color: #666;
+            font-size: 14px;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
 </head>
 <body>
-    <h1>🌟 欢迎来到我的网站！</h1>
-    <p>这是我用 GitHub Pages 制作的第一个网页。</p>
-    <p>我会在这里慢慢学习如何做一个更好的网站！</p>
-    <hr>
-    <p>📅 创建于 2026年</p>
+    <div class="container">
+        <h1>🎬 我的电视剧小站</h1>
+        
+        <div class="drama-list">
+            <!-- 电视剧1 -->
+            <a href="drama1.html">
+                <div class="drama-card">
+                    <div class="drama-poster">📺</div>
+                    <div class="drama-title">IMG_5635</div>
+                    <div class="drama-desc">点击观看这部精彩的电视剧</div>
+                </div>
+            </a>
+            
+            <!-- 电视剧2 -->
+            <a href="drama2.html">
+                <div class="drama-card">
+                    <div class="drama-poster">🎬</div>
+                    <div class="drama-title">1</div>
+                    <div class="drama-desc">点击观看这部精彩的电视剧</div>
+                </div>
+            </a>
+            
+            <!-- 电视剧3 - 你可以继续添加 -->
+            <a href="drama3.html">
+                <div class="drama-card">
+                    <div class="drama-poster">🌟</div>
+                    <div class="drama-title">2</div>
+                    <div class="drama-desc">点击观看这部精彩的电视剧</div>
+                </div>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
