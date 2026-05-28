@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>正在播放 - 电视剧名称 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+        .player-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        video {
+            width: 100%;
+            border-radius: 10px;
+            outline: none;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #00aaff;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .video-info {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #222;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="player-container">
+        <!-- 返回按钮 -->
+        <a href="index.html" class="back-link">← 返回电视剧列表</a>
+        
+        <h1>🎬 电视剧名称 1</h1>
+        
+        <!-- 视频播放器 -->
+        <!-- 方式一：使用你上传到仓库的视频 -->
+        <video controls autoplay>
+            <source src="你的视频文件名.mp4" type="video/mp4">
+            您的浏览器不支持视频播放。
+        </video>
+        
+        <div class="video-info">
+            <h3>📖 剧情简介</h3>
+            <p>这里可以写这部剧的剧情介绍、主演信息等。</p>
+            <p>📅 上映时间：2024年</p>
+            <p>⭐ 评分：8.5/10</p>
+        </div>
+    </div>
+</body>
+</html>
