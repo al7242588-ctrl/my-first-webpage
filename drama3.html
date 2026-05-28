@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>正在播放 - 2</title>
+    <style>
+        body {
+            background-color: #000;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .player-container {
+            max-width: 900px;
+            width: 100%;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        video {
+            width: 100%;
+            border-radius: 10px;
+            outline: none;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #00aaff;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="player-container">
+        <a href="index.html" class="back-link">← 返回电视剧列表</a>
+        <h1>🎬 正在播放：视频 2</h1>
+        
+        <video controls autoplay>
+            <source src="2.MP4" type="video/mp4">
+            您的浏览器不支持视频播放
+        </video>
+    </div>
+</body>
+</html>
